@@ -13,8 +13,11 @@ _web programming adalah abstraksi dari system programming_
 
 # Kajian Jumat Malam 20: Semua Tentang Memori
 latch = memory yang ada pada komputer
+van haumen architecture
 
 ## memory hierarchy
 1. register
 2. cpu chache
 3. programming
+
+### virtual memory
