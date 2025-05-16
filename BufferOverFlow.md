@@ -7,9 +7,9 @@
 1. Pendahuluan
 2. Konsep exploitasi
 3. Attack vector :
- 1. NOP
- 2. NOPSLED
- 3. PAYLOAD
+ - NOP
+ - NOPSLED
+ - PAYLOAD
 4. Special thanks
 
 ### Pendahuluan
