@@ -306,5 +306,5 @@ root@bt:~#
 selamat ! anda telah sukses mengexploitasi buffer overflow !
 
 ### special thanks : devilzc0de crew and jasakom crew
-		 : www.devilzc0de.org / www.devilzc0de.com - www.jasakom.com , indonesianhacker.org, yogyacarderlink.web.id
-		 : serverisdown.org, xc0de.or.id, echo.or.id
+>www.devilzc0de.org / www.devilzc0de.com - www.jasakom.com , indonesianhacker.org, yogyacarderlink.web.id
+>serverisdown.org, xc0de.or.id, echo.or.id
