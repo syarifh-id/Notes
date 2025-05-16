@@ -1,15 +1,15 @@
 # Linux Buffer Overflow Tutorial
 > Edisi : Pertama
 > Penulis : gunslinger_ <yudha.gunslinger@gmail.com>
->  Tanggal : Sat Jun 26 20:27:41 WIT 2010
+> Tanggal : Sat Jun 26 20:27:41 WIT 2010
 
 ## Konten  :
 1. Pendahuluan
 2. Konsep exploitasi
 3. Attack vector :
- 3.1. NOP
- 3.2. NOPSLED
- 3.3. PAYLOAD
+ 1. NOP
+ 2. NOPSLED
+ 3. PAYLOAD
 4. Special thanks
 
 ### Pendahuluan
@@ -53,8 +53,7 @@ root@bt:~#
 ```
 
 sekarang saatnya kita meng - compile program tersebut.
-perhatian : pada saat mengompile tambahkan opsi -fno-stack-protector dan -mpreferred-stack-boundary=2.
-berikut caranya
+>perhatian : pada saat mengompile tambahkan opsi -fno-stack-protector dan -mpreferred-stack-boundary=2. berikut caranya
 
 ```
 root@bt:~# gcc -g -o bof -fno-stack-protector -mpreferred-stack-boundary=2 bof.c
@@ -71,11 +70,13 @@ root@bt:~# ./bof `perl -e 'print "A" x 404'`
 Segmentation fault
 root@bt:~#
 ```
+
 disitu kita tahu kita membutuhkan 404 panjang string agar si program mengalami crash .
 lalu kemudian sekarang yang kita lakukan adalah kita mencari panjang string agar register EIP teroverwrite pada inputan kita.
 EIP adalah poin awal dimana instruksi selanjutnya akan tereksekusi, maka jika EIP tersebut kita teroverwrite, kita bisa melakukan apa yang kita mau eksekusi pada saat itu.
 sekarang, saatnya kita gunakan GNU debugger atau biasa disebut gdb.
 perhatikan pada experiment berikut.
+
 ```
 root@bt:~# gdb -q bof
 (gdb) list
