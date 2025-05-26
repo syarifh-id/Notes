@@ -8,14 +8,14 @@
 
 
 > risk vs vulnerability vs threat
-> vulnerability = break some security boundary, easy to prof, 
+> vulnerability = break some security boundary, easy to prof,
 > risk = dont cause system hacked directly, risk depend on context and envirovment but can be or lead to vulnerability
 > Threat = An entity or situation which took advantage of exploitable vulnerability intentionally/unintentionally to produce risk
 
 ## 1. Data Security risk
 
 - poison the data
-- exfitrate the data 
+- exfitrate the data
 - leakage the data
 
 
@@ -53,3 +53,8 @@
 - Governance
 
 
+# LLM OWASP Top 10
+1. Prompt injection
+  - Direct
+  - Indirect
+2.
